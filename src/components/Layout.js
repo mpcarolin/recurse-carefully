@@ -16,6 +16,7 @@ const NavLink = (props) => {
   return (
     <span className="nav-link-flex-container" key={ props.link.name }>
       <li className={navClass}>
+        <span className="terminal-prompt">&gt;_</span>
         <Link className="router-link" to={props.link.route}>{ props.link.name }</Link>
       </li>
     </span>
@@ -44,11 +45,13 @@ class Layout extends Component {
     return (
       <Router>
         <div className="welcome-root">
-          <div className='nav-header'> 
-            <span className="nav-title">{SITE_NAME}</span>
-            <NavLinks links={pages} 
-                      currentPage={this.state.currentPage}
-                      containerClass="nav-link-desktop-container" />
+          <div className='nav-bar-container'>
+            <div className='nav-header'> 
+              <div className="nav-title">{SITE_NAME}</div>
+              <NavLinks links={pages} 
+                        currentPage={this.state.currentPage}
+                        containerClass="nav-link-desktop-container" />
+            </div>
           </div>
         </div>
       </Router>

@@ -3,69 +3,33 @@
 	width: 100%;
 }
 
-@media (min-width: 800px) {
-	.nav-bar {
-		height: 80px;	
-	}	
-}
-
-.spacer {
-	width: 100%;	
-	height: 80px;
-}
-
-.nav-header {
-	display: flex;	
-	flex-direction: row;
-	color: var(--site-blue);
-}
-
-@media (max-width: 1000px) {
-	.nav-header {
-		flex-direction: column;	
-		height: 200px;
-	}
+.nav-bar-container {
+	width: 45%;
 }
 
 .nav-title {
 	float: left !important;	
-	font-size: 1.3em;
+	font-size: 1.4em;
 	vertical-align: middle;
 	text-align: center;
 	padding: 16px;
+	padding-bottom: 0px;
 	font-weight: bold;
+	color: var(--site-blue);
 }
 
 .nav-link-desktop-container {
-	margin: 0px;
-	padding: 0px;
-	margin-left: 15px;
-	display: flex;	
-	flex-direction: row;
-	align-items: center;
-	float: left;
-	list-style: none;
-	height: 100%;
-}
-
-@media (max-width: 600px) {
-	.nav-title {
-		font-size: 1.5em;
-	}	
-}
-
-@media (max-width: 800px) {
-	.nav-link-desktop-container {
-		display: none;
-	}
+	float: left;	
+	margin: 0;
+	padding: 16px;
+	padding-top: 0px;
 }
 
 .nav-link {
-	margin-left: 10px;
 	height: 100%;
 	font-weight: bold;
 	display: inline-block;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .router-link {
@@ -74,47 +38,40 @@
 }
 
 
-@media (max-width: 800px) {
-	.nav-link-icon {
-		float: left;	
-	}
-
-	.nav-link {
-		display: block;	
-		font-weight: bold;
-		float: left;
-
-	}	
-}
-
 .nav-link-flex-container {
 	color: white;	
 	display: flex;
 	align-items: center;
-	margin: 10px;
 	margin-top: 15px;
 }
 
-@media (min-width: 800px) {
-	.nav-link-flex-container {
-		color: white;	
+@media(min-width: 1000px) {
+	.nav-bar-container {
+		width: 100%;	
+	}
+	.nav-link-desktop-container {
 		display: flex;
-		align-items: center;
-		margin: 10px;
-		margin-top: 15px;
 		flex-direction: row;
+		justify-content: space-between;
+		margin-left: 30px;
+	}
+
+	.nav-link-flex-container {
+		display: inline;		
+		margin: 18px;
 	}
 }
 
 .nav-link:hover {
 	cursor: pointer;
-	filter: drop-shadow(0 0 0.3rem var(--pokedex-blue));
+	color: var(--site-gray);
 }
 
-.nav-icon {
-	color: white;
-	text-align: center;
-	font-size: 2.5em;
-	margin: 10px;
-	cursor: pointer;
+.terminal-prompt {
+	display: none;
 }
+
+.nav-link:hover > .terminal-prompt {
+	display: inline;
+}
+
