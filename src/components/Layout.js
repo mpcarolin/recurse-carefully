@@ -3,12 +3,13 @@ import style from './Layout.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Projects from './Projects/Projects.js'
+import Blog from './Blog/Blog.js'
 import About from './About/About.js'
 
 // pages 
 const pages = [
   { name: "projects", route: "/projects", component: Projects },
-  { name: "blog", route: "/blog", component: null },
+  { name: "blog", route: "/blog", component: Blog },
   { name: "about", route: "/about", component: About }
 ]
 

@@ -10,7 +10,8 @@
 	margin-right: 16px;
 
 	/*overflow-y: scroll !important;*/
-	width: 100%;
+	width: 90%;
+	height: 80%;
 	overflow: auto;
 	color: var(--site-white);
 }
