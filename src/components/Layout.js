@@ -13,7 +13,7 @@ const pages = [
 ]
 
 // const SITE_NAME = "michael carolin"
-const SITE_NAME = "Recurse Carefully"
+const SITE_NAME = "recurse-carefully"
 
 const NavLink = (props) => {
   const navClass = "nav-link " + (props.isCurrent ? "selected" : "")

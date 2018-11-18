@@ -1,0 +1,27 @@
+
+.about-container {
+	margin-left: 16px;
+	margin-right: 16px;
+	color: var(--site-white);
+	width: 70%;
+}
+
+.about-link {
+	text-decoration: none;
+	color: var(--site-orange);	
+	cursor: pointer;
+}
+
+.about-link:hover {
+	color: var(--site-tan);
+}
+
+.about-header {
+	color: var(--site-blue);
+	text-decoration: underline;
+}
+
+.about-description {
+	text-align: left;
+	max-width: 600px;
+}
