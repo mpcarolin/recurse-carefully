@@ -1,14 +1,17 @@
 .projects-container {
 	margin-top: 26px;
+	/*
 	display: flex;	
 	flex-direction: column;
 	justify-content: space-between;
+	*/
 
 	margin-left: 16px;
 	margin-right: 16px;
-	margin-bottom: 100px;
 
-	overflow-y: scroll !important;
+	/*overflow-y: scroll !important;*/
+	width: 100%;
+	overflow: auto;
 	color: var(--site-white);
 }
 
@@ -18,16 +21,19 @@
 }
 
 .project {
+	/*
 	display: flex;	
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: left;
+	*/
 	margin-bottom: 10px;
 }
 
 .project-content {
 	padding-top: 5px;
 	padding-left: 16px;	
+	overflow-x: hidden;
 }
 
 .project-name {

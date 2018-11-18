@@ -16,8 +16,7 @@
 	width: 100%;
 	height: 100%;
 	padding-top: 36px;
-	/* overflow: hidden;*/
-	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .nav-title {

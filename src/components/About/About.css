@@ -3,13 +3,13 @@
 	margin-left: 16px;
 	margin-right: 16px;
 	color: var(--site-white);
-	width: 70%;
 }
 
 .about-link {
 	text-decoration: none;
 	color: var(--site-orange);	
 	cursor: pointer;
+	font-size: 1.2em;
 }
 
 .about-link:hover {
@@ -19,9 +19,11 @@
 .about-header {
 	color: var(--site-blue);
 	text-decoration: underline;
+	font-size: 1.5em;
 }
 
 .about-description {
 	text-align: left;
 	max-width: 600px;
+	font-size: 1.2em;
 }
