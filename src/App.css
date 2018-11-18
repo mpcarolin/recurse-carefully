@@ -7,6 +7,13 @@
   --site-blue: #56b6c2;
   --site-grey: #abb2bf;
   --site-tan: #c7ad9c;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
 
 html {
@@ -17,5 +24,8 @@ div {
   font-family: 'PT Mono', monospace;
 }
 
-body {
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
